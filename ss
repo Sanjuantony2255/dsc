@@ -1,18 +1,16 @@
-print("Containers:Lists")
-nums = list(range(5))
-print("list 'nums' contains: ", nums)
-nums[4]="abc"
-print("List can contain elements of different types. Example: ", nums) 
-nums.append("xyz")
-print("'nums' after inserting new element at the end: ")
-print("Sublists:")
-print("A slice from index 2 to 4 : ",nums[2:4])
-print("A slice from index 2 to the end : ",nums[2:])
-print("A slice from the start to index 2 : ",nums[:2])
-print("A slice of the whole list : ",nums[:])
-nums[4:] = [8, 9]
-print("After Assigning a new sublist to 'nums': ")
-for idx,i in enumerate(nums):
-    print('%d:%s'%(idx + 1, i))
-even_squares = [x ** 2 for x in nums if x % 2 == 0]
-print("List of squares of even numbers from 'nums' : ",even_squares)
+print("Containers:Dictionaries")
+d = dict()
+d = {'cat': 'cute', 'dog': 'furry'}
+print("Dictionary: ",d)
+print("Is the dictionary has the key 'cat' ? ", 'cat' in d) 
+d['fish'] = 'wet'
+print("After adding new entry to 'd' : ",d)
+print("Get an element monkey : ",d.get('monkey', 'N/A')) 
+print("Get an element fish: ",d.get('fish', 'N/A'))
+del d['fish']
+print("After deleting the newly added entry from 'd' : ",d) 
+print("Demo of dictionary comprehension: ")
+squares={x:x*x for x in range(10)}
+print("Squares of integers of range 10: ") 
+for k,v in squares.items():
+    print(k, ":",v)
