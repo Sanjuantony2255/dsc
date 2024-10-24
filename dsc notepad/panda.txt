@@ -29,13 +29,6 @@ print(ufo.describe())
 print("\nColumn names of ufo dataframe:\n", ufo.columns)
 #rename two of the columns by using the 'rename' method 
 ufo.rename(columns={'Colors Reported':'Colors_Reported','Shape Reported':'Shape_Reported'},inplace=True)
-188                           7.7  South America  
-189                           2.0           Asia  
-190                           0.1           Asia  
-191                           2.5         Africa  
-192                           4.7         Africa  
-
-[193 rows x 6 columns]
 print("\nColumn name of ufo dataframe after renaming two column names:\n",ufo.columns)
 #rename multiple columns at once
 ufo.drop(['City','State'], axis=1, inplace=True)
