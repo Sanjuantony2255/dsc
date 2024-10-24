@@ -252,9 +252,8 @@ print(pd.get_dummies(train, columns=['Sex', 'Embarked'], drop_first=True).head()
 import numpy as np
 # create a DataFrame from a dictionary (keys become column names, values become data)
 #bfill() instead.
-  print(ufo.fillna(method='bfill').tail(3))
-/tmp/ipykernel_2595/693286332.py:39: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill(optionally specify the order of columns and defne the index
-df = pd.DataFrame({'id':[100, 101, 102], 'color': ['red', 'blue', 'red']}, columns=['id', 'color'], index=['a','b', 'c'])
+df = pd.DataFrame({'id':[100, 101, 102], 'color': ['red', 'blue', 'red']}, columns=['id', 'color'],
+index=['a','b', 'c'])
 print("DataFrame from a dictionary:")
 print(df)
 print()
